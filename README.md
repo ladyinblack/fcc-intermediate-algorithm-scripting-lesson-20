@@ -16,3 +16,23 @@ Read the instructions carefully, it is always a good hint in itself to run the c
 - [Details of the Object Model](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)
 
 
+## HINTS
+
+### Hint 1
+Use the **this** notation to create the keys instead of regular functions: This means instead of `var varName = function () { /*...*/ }` you should use `this.varName = function () { /*...*/ }`.
+
+### Hint 2
+The program has a test that checks for how many keys you used, they have to be exactly six, the six mentioned in the details section.  This means if you need to work with variables, make them local and not a key: `this.fullName = firstAndLast;`.
+
+### Hint 3
+Often the code would not work the way you expect it due to wrong variable names, make sure to check that you spell them the right way.  This happens to all of us at some point.
+
+### Hint 4
+If you are having problems with writing the `setter` methods, below is a template for a `set` method:
+```js
+this.setFullName = function(input) {
+  // Insert your code here
+};
+```
+
+
